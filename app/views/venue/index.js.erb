@@ -59,12 +59,24 @@ var App = function(_React$Component) {
         <% current_row = 'A' %>
         <% @rows.times.each do |row| %>
           <% @columns.times.each do |column| %>
-            'Seat <%= current_row %><%= (column+1) %>',
+            <% if @available_seats.include?("#{current_row}#{column+1}") %>
+              'Seat <%= current_row %><%= (column+1) %>',
+            <% end %>
           <% end %>
           <% current_row = current_row.next %>
         <% end %>
       ],
-      seatReserved: []
+      seatReserved: [
+        <% current_row = 'A' %>
+        <% @rows.times.each do |row| %>
+          <% @columns.times.each do |column| %>
+              <% unless @available_seats.include?("#{current_row}#{column+1}") %>
+              'Seat <%= current_row %><%= (column+1) %>',
+              <% end %>
+            <% end %>
+          <% current_row = current_row.next %>
+        <% end %>
+      ]
     };
     return _this;
   }

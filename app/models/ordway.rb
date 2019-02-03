@@ -27,4 +27,10 @@ module Ordway
         }
     }
   }
+  def self.available_seats
+    Ordway::H[:seats].values.map do |seat|
+      seat[:row].upcase.to_s + seat[:column].to_s
+    end
+  end
+
 end
