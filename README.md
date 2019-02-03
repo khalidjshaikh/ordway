@@ -21,7 +21,11 @@ gem install rails
 
 * Database initialization
 
-* How to run the test suite
+* How to run rake task
+```
+rake seats:print
+```
+![](rake.png)
 
 * Services (job queues, cache servers, search engines, etc.)
 
@@ -77,4 +81,5 @@ The app must be in GitHub with a README.md explaining the app and steps to run i
 
 ### EXTRA
 * How would you modify to accommodate a group of 2 or more seats being requested?
+The algorithm would assign weights to only pairs of seats available.
 * How could you optimize the process of seat decision?
