@@ -26,6 +26,7 @@ gem install rails
 * Run locally instructions
 ```
 git clone https://github.com/khalidjshaikh/ordway.git
+cd ordway
 bundle
 rails s
 ```

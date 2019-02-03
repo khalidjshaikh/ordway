@@ -34,7 +34,7 @@ var _createClass = function () {function defineProperties(target, props) {for (v
     {
       return (
         React.createElement('div', null,
-          React.createElement('h1', null, 'Seat Reservation System'),
+          React.createElement('h1', null, 'Ordway Labs Best Seat Available with React'),
           React.createElement(DrawGrid, {
             seat: this.state.seat,
             available: this.state.seatAvailable,
