@@ -9,6 +9,7 @@ Things you may want to cover:
 2.5.1p57
 
 * System dependencies & Configuration Management
+Developed on Windows 10 with Ubuntu 18.04.1 LTS.
 ```
 apt install ruby ruby-dev build-essential patch ruby-dev zlib1g-dev liblzma-dev libsqlite3-dev
 gem install rails
@@ -22,7 +23,13 @@ gem install rails
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Run locally instructions
+```
+git clone https://github.com/khalidjshaikh/ordway.git
+bundle
+rails s
+```
+browse to http://localhost:3000
 
 * ...
 
