@@ -32,7 +32,7 @@ rails s
 ```
 browse to http://localhost:3000
 
-* ...
+* The question
 
 Please find the code challenge below. Do you believe that you will be able to complete and email to me Tuesday by close of business?  Let me know if you have any questions. 
 
