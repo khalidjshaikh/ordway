@@ -47,14 +47,22 @@ var App = function(_React$Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
     _this.state = {
       seat: [
-        'Front1', 'Front2', 'Front3',
-        'Middle1', 'Middle2', 'Middle3',
-        'Back1', 'Back2', 'Back3'
+        <% current_row = 'A' %>
+        <% @rows.times.each do |row| %>
+          <% @columns.times.each do |column| %>
+            'Seat <%= current_row %><%= (column+1) %>',
+          <% end %>
+          <% current_row = current_row.next %>
+        <% end %>
       ],
       seatAvailable: [
-        'Front1', 'Front2', 'Front3',
-        'Middle1', 'Middle2', 'Middle3',
-        'Back1', 'Back2', 'Back3'
+        <% current_row = 'A' %>
+        <% @rows.times.each do |row| %>
+          <% @columns.times.each do |column| %>
+            'Seat <%= current_row %><%= (column+1) %>',
+          <% end %>
+          <% current_row = current_row.next %>
+        <% end %>
       ],
       seatReserved: []
     };
