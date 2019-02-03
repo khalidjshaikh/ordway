@@ -5,7 +5,6 @@ application up and running.
 
 ![](ordway.png)
 
-
 Things you may want to cover:
 
 * Ruby version
