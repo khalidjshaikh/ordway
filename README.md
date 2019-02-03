@@ -81,5 +81,6 @@ The app must be in GitHub with a README.md explaining the app and steps to run i
 
 ### EXTRA
 * How would you modify to accommodate a group of 2 or more seats being requested?
-The algorithm would assign weights to only pairs of seats available.
+> The algorithm would assign weights to only pairs of seats available.
 * How could you optimize the process of seat decision?
+> Precalculate the weights based on the seat maps such that it is simply a look up table.
